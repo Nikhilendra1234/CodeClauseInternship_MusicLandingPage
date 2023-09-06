@@ -1,0 +1,361 @@
+/* code for universial sselector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+/* code for body */
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#d2bbc6,#fc647d);
+}
+/*  code for navbar styling*/
+nav{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #d2bbc6;
+}
+/* code for nav bar logo */
+nav .logo h1{
+    font-size: 60px;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('https://media.istockphoto.com/id/1126773195/photo/abstract-picture-of-pink-paints.jpg?s=2048x2048&w=is&k=20&c=dFLcUHKD2Qs_2kusu9vhlyYqqsnwfiYyR9PHukmFDao=');
+	color: transparent;
+}
+/* code for all the links in the webpage */
+nav .links{
+    width: 600px;
+    display: flex;
+    justify-content:space-around;
+}
+nav .links a{
+    font-size: 30px;
+    text-decoration: none;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('https://as1.ftcdn.net/v2/jpg/03/78/48/92/1000_F_378489202_mX6i6Vv3Fr9QGefJ1NsNJdavqMbiT7d6.jpg');
+	color: transparent;
+    transition: all 1s;
+}
+nav .links a:hover{
+    transform: scale(1.5);
+    /* transform: translate(0,-20px); */
+    color: #5b0311;
+}
+/* code for hidden links */
+ .links2{
+    display: none;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+.links2 .fa-xmark{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 30px;
+    display: block;
+}
+.links2 a{
+    display: block;
+    margin: 8px auto;
+    font-size: 30px;
+    text-decoration: none;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('https://as1.ftcdn.net/v2/jpg/03/78/48/92/1000_F_378489202_mX6i6Vv3Fr9QGefJ1NsNJdavqMbiT7d6.jpg');
+	color: transparent;
+    border-bottom:2px solid #c16a79;
+    padding: 5px 0px;
+    transition: all 1s;
+}
+.links2 a:hover{
+    transform: scale(1.5);
+    color: #5b0311;
+}
+/* code for hamberger menu */
+nav .bars{
+   display: none;
+   cursor: pointer;
+}
+nav .fa-bars{
+    font-size: 30px;
+}
+/* code for main div */
+.main{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main .texts{
+    width: 500px;
+    padding: 30px;
+    text-align: left;
+    /* display: none;     */
+}
+/* code for text side and texts */
+.main .texts h1{
+    font-size: 60px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/03/78/48/92/1000_F_378489202_mX6i6Vv3Fr9QGefJ1NsNJdavqMbiT7d6.jpg');
+    color: transparent;
+    margin: 20px 0px;
+    font-family: cursive;
+
+}
+.main .texts h2{
+    font-size: 50px;
+    color: #8c172b;
+    line-height: 60px;
+    margin: 20px 0px;
+    font-family: cursive;
+    font-family: cursive;
+}
+.main .texts span{
+    color: #0e0101;
+    font-family: cursive;
+
+}
+.main .texts p{
+    font-size: 18px;
+    color: #bf3f57;
+    line-height: 30px;
+    font-family: cursive;
+
+}
+/* code for images and slides */
+.main .img{
+    width: 600px;
+    padding: 20px;
+    background-color: transparent;
+}
+.main .img img{
+    width: 600px;
+    height: 500px;
+   padding: 10px;
+    filter: drop-shadow(5px 5px 100px #df667e);
+    /* position: absolute;
+    top: 0px;
+    left: 0px; */
+}
+.main .imageslider{
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+    /* position:relative; */
+    margin: 0px auto;
+    overflow: hidden;
+    box-shadow: 0px -25px 50px -20px #d03650,
+    25px 0px 50px -20px #d03650,
+    0px 25px 50px -20px #d03650,
+    -25px 0px 50px -20px #d03650;
+}
+.main  .images{
+    position: relative; 
+     display:flex;
+     width:600px;
+     height: 450px;
+     animation-name:slide;
+     animation-duration: 13s;
+    animation-iteration-count: infinite;
+    transition-duration:2s;
+    /* box-shadow: 10px 10px 10px #d88996; */
+    box-shadow: 0px -25px 30px -20px #d88996,
+    25px 0px 30px -20px #d88996,
+    0px 25px 30px -20px #d88996,
+    -25px 0px 30px -20px #d88996;
+}
+/* code for animation image slider */
+@keyframes slide {
+    0%{left: 0px;}
+    17%{left: -610px;}
+    34%{left:-1220px;}
+    50%{left:-1830px;}
+    64%{left:-2440px;}
+    80%{left:-3050px;}
+    95%{left: -3660px;}
+    100%{left: 0px;}
+}
+/* code for button */
+.main .btn{
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 5px 20px;
+    border: 2px solid rgb(137, 62, 87);
+    border-radius: 25px;
+    background-color: #d97f8e;
+    color: #dc0b2e;
+    cursor: pointer;
+}
+/* code for music palyer */
+.main .musical{
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    background: #ff92a4;
+    border: 8px solid #dabdbd;
+    border-radius: 30px;
+    margin: 20px 0px;
+    box-shadow: 0px -25px 60px -20px #b95666,
+    25px 0px 60px -20px #b95666,
+    0px 25px 60px -20px #b95666,
+    -25px 0px 60px -20px #b95666;
+    display: none;
+}
+/* code when msuic starts play animated dj vibration*/
+.djstyle{
+    animation: dj 0.2s  infinite ;
+    margin: 40px 0px;
+}
+@keyframes dj {
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+/* code for styling of music player */
+/* code for image inside music player */
+.musical img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #d4cfd0;
+    margin: 10px 0px;
+    filter: drop-shadow(5px 5px 5px #282727);
+}
+/* code for animation on image */
+.animation{
+    animation: rotate  3s infinite linear ;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* code for designing the progress bar of the musicplayer */
+#progress{
+    -webkit-appearance: none;
+    width: 90%;
+    background-color: #d03650;
+    height: 8px;
+    border-radius: 5px;
+
+}
+/* code for progress bar meter */
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    /* color: #8c172b; */
+    background-color: #f3052d;
+}
+/* code for controls of the music player */
+.controls{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.controls span{
+    background-color: #d2bbc6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #c46575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.controls #ctrl{
+    padding: 10px;
+}
+.controls .pl{
+    width: 50px;
+    height: 50px;
+}
+/* code for bounce animation to the buttons */
+.bounce{
+    animation: bounce  3s infinite linear ;
+}
+@keyframes bounce {
+    0%{transform: translate(0px,0px);}
+    25%{
+        transform: translate(0px,-20px);
+    }
+    50%{
+        transform: translate(0px,0px);
+    }
+    75%{
+        transform: translate(0px,20px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+/* code for responsive web design */
+@media screen  and (max-width:950px){
+    nav .links{
+        display: none;
+    }
+    nav .bars{
+        display: inline;
+    }
+    .links2{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .texts{
+        width: 90%;
+    }
+    .musical{
+        width: 70%;
+    }
+   .imageslider{
+    width: 650px;
+   }
+   .images{
+    width:600px;
+   }
+   img{
+    width: 600px;
+   }
+    
+}
+@media screen and (max-width:500px){
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .imageslider{
+        width: 450px;
+    }
+    .images{
+        width: 400px;
+    }
+}

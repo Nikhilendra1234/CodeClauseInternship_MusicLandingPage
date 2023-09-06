@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Palyer Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11bc2198c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar for the music player -->
+    <nav>
+        <!-- logo of the webpage -->
+        <div class="logo"><h1>NiksMusic</h1></div>
+        <!-- all the visible links of the web page -->
+        <div class="links">
+            <a href="">playlist</a>
+            <a href="">favorites</a>
+            <a href="">artist</a>
+        </div>
+        <!-- creating hamberg menu for smaller devices -->
+        <div class="bars" id="hamberg">
+            <i class="fa-solid fa-bars"  id="ham" style="color: #54032a;"></i>
+        </div>
+        
+    </nav>
+    <!-- hidden links to be show by hamberger menu -->
+    <div class="links2" id="hlinks2">
+        <i class="fa-solid fa-xmark" id="close" style="color: #bb119c;"></i>
+        <a href="" class="slinks">playlist</a>
+        <a href="" class="slinks">favorites</a>
+        <a href="" class="slinks">artist</a>
+    </div>
+<!-- main section of the web page -->
+    <div class="main">
+        <div class="text" id="music">
+        <!-- Text section of the webpage -->
+            <div class="texts" id="musictext">
+                <h1>MusicWithNik</h1>
+                <h2>Let's <span>the</span><br>Music <span>speak</span></h2>
+                <p>Music is the universial language of mankind,<br>Music brings harmony to the world.</p>
+            </div>
+        <!-- music player section of the webpage to be replaced by texts on evnets -->
+            <div class="musical" id="musicmusic">
+                       <h1 id="title">Daku ek number</h1>
+                       <h3 id="artist">Inderpal Moga</h3>
+                       <img src="./images/daku ek.png" alt="image" id="mimg">
+                       <audio src="./music/Daku_320(PagalWorld.cm).mp3"  id="songs"></audio>
+                       <input type="range" id="progress">
+                       <div class="controls">
+                        <span id="prev"><i class="fa-solid fa-backward" style="color: #ad0540;"></i></span>
+                        <span class="pl"><i  class="fa-solid fa-play" id="ctrl" style="color:#ad0540;" ></i></span>
+                        <span id="next"><i class="fa-solid fa-forward" style="color: #ad0540;" ></i></span>
+                       </div>
+                
+            </div>
+        </div>
+    <!-- image and button container of the main section -->
+        <div class="img">
+            <!--image container of the webpage  -->
+            <div class="imageslider">
+                <!-- image slider use to slide the image an stores all the images -->
+                <div class="images">
+            <!-- all the images used in image slider -->
+                <img src="https://cdn.create.vista.com/api/media/medium/417599988/stock-photo-shocked-beautiful-woman-listening-music-headphones-pointing-pink-background?token=" alt="">
+
+                <img src="https://static.vecteezy.com/system/resources/previews/025/041/936/non_2x/portrait-of-a-redheaded-man-wearing-headphones-smiling-and-dancing-listening-to-music-on-a-pink-background-a-hipster-with-a-beard-photo.jpg" alt="">
+
+                <img src="https://images.photocase.com/r/rksrtf3f/t9paftz2/photocaset9paftz23.jpg?1679489708" alt="">
+
+                <img src="https://img.freepik.com/premium-photo/abstract-background-with-young-girl-headphones-listening-music-bright-neon-colors-colourful-female-portrait-atmospheric-wallpaper-horizontal-illustration-banner-design-generative-ai_9209-12704.jpg?w=1380" alt="">
+
+                <img src="https://as2.ftcdn.net/v2/jpg/05/19/66/49/1000_F_519664902_vCbU7bipuEW1P57rG16fKI5kAlJCHeqJ.jpg" alt="">
+
+                <img src="https://as2.ftcdn.net/v2/jpg/04/29/16/13/1000_F_429161369_SPFahVfUe1YAU3EnQOFkOlxxUncAsrsB.jpg" alt="">
+                
+               <img src="https://media.gettyimages.com/id/1544828539/photo/a-black-ethnic-man-in-a-green-dress-dancing-very-happy-to-music-with-headphones-on-a-pink.jpg?s=170667a&w=gi&k=20&c=c-SmSpwidCkqtmtWVtR5zmvLaZGPacr6X9PkRVJvQ7k=" alt="">
+              </div>
+            </div>
+            <!-- buttons used to start music player and stop music player -->
+            <button id="mplay" class="btn" title="playmusic">play</button>
+            <button id="mstop" class="btn" title="stopmusic">stop</button>
+        </div>
+    </div>
+<!-- javascript to add functionality to the webpage -->
+    <script src="script.js"></script>
+</body>
+</html>
