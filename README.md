@@ -29,4 +29,4 @@ created a music landing page with music player functionality using HTML,CSS,JAVA
   <li>used events to play next and previous songs in the web page.</li>
   <li>used functions to add the functionality like play and stop music in the web page.</li>
 </ul>
-
+<h2>visit site at:https://nikhilendra1234.github.io/CodeClauseInternship_MusicLandingPage/</h2>
